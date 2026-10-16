@@ -19,17 +19,19 @@
   <header>
 
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid flex-nowrap">
 
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="images/School Logo.png" alt="School Logo" width="50" height="50" class="img-fluid">
-          <span class="fs-6 fw-bold sname_color">Shrihari Vidhyalaya Wahegaon School</span>
+        <!-- Logo (Fix applied here for button wrapping issue) -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#" style="max-width: 80%;">
+          <img src="images/School Logo.png" alt="School Logo" width="45" height="45" class="img-fluid flex-shrink-0">
+          <span class="fs-6 fw-bold sname_color text-wrap" style="line-height: 1.2;">Shrihari Vidhyalaya Wahegaon
+            School</span>
         </a>
 
-        <!-- Toggle Button (White button fix applied) -->
-        <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Toggle Button -->
+        <button class="navbar-toggler flex-shrink-0" style="border-color: white;" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
         </button>
 
@@ -71,8 +73,7 @@
   <main>
 
     <!-- Slider Section Start -->
-    <!-- Added mt-5 pt-5 so it doesn't hide under the fixed navbar -->
-    <section class="mt-5 pt-2 pt-md-4">
+    <section class="mt-5 pt-4 pt-md-5">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators ">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -179,7 +180,6 @@
     <!-- Tree Section End here -->
 
     <!-- Heart of School Leader Section Start -->
-    <!-- Changed 'navbar' class to 'py-5' as 'navbar' causes layout issues on mobile -->
     <section class="py-5 mt-2 bg-dark text-light">
       <div class="container">
         <div class="row justify-content-center">
@@ -238,7 +238,6 @@
         <div class="row justify-content-center">
 
           <div class="col-md-6 col-lg-3">
-            <!-- Added mx-auto and max-width instead of fixed 18rem -->
             <div class="card mx-auto mb-4 shadow-sm h-100" style="max-width: 18rem;">
               <img src="images/p_4.png" class="card-img-top" alt="...">
               <div class="card-body d-flex flex-column">
@@ -482,6 +481,3 @@
 </body>
 
 </html>
-<br><br>
-<FollowUp label="Kaisa laga ye fix? Kya CSS ya koi aur page bacha hai?"
-  query="Everything looks good, are there any CSS tweaks needed?" />

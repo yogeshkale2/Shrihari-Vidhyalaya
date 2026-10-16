@@ -17,46 +17,42 @@
 
     <!-- Header -->
     <header>
-
         <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid flex-nowrap">
 
-                <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                    <img src="images/School Logo.png" alt="School Logo" width="50" height="50" class="img-fluid">
-                    <span class="fs-6 fw-bold sname_color">Shrihari Vidhyalaya Wahegaon School</span>
+                <!-- Logo (Fix applied here for button wrapping issue) -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#" style="max-width: 80%;">
+                    <img src="images/School Logo.png" alt="School Logo" width="45" height="45"
+                        class="img-fluid flex-shrink-0">
+                    <span class="fs-6 fw-bold sname_color text-wrap" style="line-height: 1.2;">Shrihari Vidhyalaya
+                        Wahegaon School</span>
                 </a>
 
-                <!-- Toggle Button (White button fix applied) -->
-                <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- Toggle Button -->
+                <button class="navbar-toggler flex-shrink-0" style="border-color: white;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
                 </button>
 
                 <!-- Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="admission.html">Admission</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="facilities.html">Facilities</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">contact</a>
                         </li>
-
                     </ul>
                 </div>
 
