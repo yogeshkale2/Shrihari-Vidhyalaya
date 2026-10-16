@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-
 </head>
 
 <body>
@@ -23,15 +22,16 @@
             <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="images/School Logo.png" alt="School Logo" width="60" height="60">
-                    Shrihari Vidhyalaya Wahegaon School
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="images/School Logo.png" alt="School Logo" width="50" height="50" class="img-fluid">
+                    <span class="fs-6 fw-bold sname_color">Shrihari Vidhyalaya Wahegaon School</span>
                 </a>
 
-                <!-- Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Toggle Button (White button fix applied) -->
+                <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
                 </button>
 
                 <!-- Menu -->
@@ -70,7 +70,8 @@
 
     <main>
         <!-- Slider Section Start  -->
-        <section class="hero-section addmision_sec mt-5 p-5 ">
+        <!-- Adjusted padding for mobile with p-4 p-md-5 -->
+        <section class="hero-section addmision_sec mt-5 p-4 p-md-5 text-center text-md-start">
 
             <!-- video bg -->
             <video id="heroVideo" autoplay="" muted="" loop="" playsinline="" preload="metadata"
@@ -78,12 +79,11 @@
                 <source src="https://d1r3r36pquuygt.cloudfront.net/uploads/Web-page-video.mp4" type="video/mp4">
             </video>
 
-
             <div class="video-overlay">
                 <h1 class="sname_color"> Shrihari Vidhyalaya School</h1>
                 <h2>An International School in Wahegaon, Beed</h2>
 
-                <div class="admission-badge">
+                <div class="admission-badge mx-auto mx-md-0">
                     <h3 class="sname_color">Admissions Open</h3>
                     <p class="sname_color year">2026–27</p>
                     <p class="sname_color grades">Nursery to Grade 10</p>
@@ -95,26 +95,27 @@
         <!-- slider Section End   -->
 
         <!-- Second Section Start -->
-        <section>
-
+        <section class="text-center">
             <img src="images/WhatsApp Image 2026-07-12 at 12.17.45 AM.jpeg" alt="Student Image" class="img-fluid" />
         </section>
         <!-- Second Section End -->
 
         <!-- Apply for Addmission section start -->
-        <section class="py-3 mt-0  admission-section-one">
+        <section class="py-4 py-md-5 mt-0 admission-section-one">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
 
                     <!-- Left Content -->
-                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                    <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-start">
 
-                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill mb-3">
-                            Admissions Open 2026-2027
-                        </span>
+                        <div class="mb-3">
+                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">
+                                Admissions Open 2026-2027
+                            </span>
+                        </div>
 
                         <h1 class="display-5 fw-bold text-dark mb-4">
-                            School Admission in<span class="text-primary">Pune 2026-2027</span>
+                            School Admission in <span class="text-primary">Pune 2026-2027</span>
                         </h1>
 
                         <p class="fs-5 text-secondary lh-lg">
@@ -124,12 +125,12 @@
 
                         <p class="fs-5 text-secondary lh-lg">
                             Fix a prior appointment with the <strong>Head of Admissions & Communication</strong>
-                            via email at <strong>shriharividhayalaya@.com</strong>
+                            via email at <strong>shriharividhayalaya@gmail.com</strong>
                             or call <strong class="text-primary">+91 8329535877</strong>.
                         </p>
 
                         <div>
-                            <a href="contact.html" class="btn btn-primary btn-lg px-4">
+                            <a href="contact.html" class="btn btn-primary btn-lg px-4 mt-2">
                                 Apply Now
                             </a>
                         </div>
@@ -137,9 +138,10 @@
                     </div>
 
                     <!-- Right Image -->
-                    <div class="col-md-5 text-center mt-5 ">
+                    <div class="col-md-5 text-center mt-5 mt-md-0">
                         <div class="school-img">
-                            <img src="images/school-admission_img_1.jpg" alt="School Building" class="img-fluid">
+                            <img src="images/school-admission_img_1.jpg" alt="School Building"
+                                class="img-fluid rounded shadow-sm">
                         </div>
                     </div>
 
@@ -148,20 +150,20 @@
         </section>
 
         <!-- Apply for Addmission section start -->
-
-        <section class="py-5 admission-section-two ">
+        <section class="py-4 py-md-5 admission-section-two bg-light">
             <div class="container">
-                <div class="row align-items-center g-5">
+                <div class="row align-items-center g-4 g-md-5 flex-column-reverse flex-lg-row">
 
                     <!-- Left Image -->
-                    <div class="col-lg-4 text-center">
+                    <!-- Added max-width and aspect-ratio for responsiveness on very small mobile screens -->
+                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
                         <img src="images/addmision_image-2.webp"
                             class="img-fluid rounded-circle border border-primary border-5 shadow" alt="Interaction"
-                            style="width:300px; height:300px; object-fit:cover;">
+                            style="width: 300px; max-width: 100%; aspect-ratio: 1; object-fit: cover;">
                     </div>
 
                     <!-- Right Content -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 text-center text-lg-start">
 
                         <span class="badge bg-primary px-3 py-2 mb-3 fs-6">
                             Admission Process
@@ -190,15 +192,15 @@
                 </div>
             </div>
         </section>
-        <!-- Apply for Addmission section start -->
 
-        <section class="py-5 admission-section-three">
+        <!-- Apply for Addmission section start -->
+        <section class="py-4 py-md-5 admission-section-three">
 
             <div class="container">
-                <div class="row align-items-center g-5">
+                <div class="row align-items-center g-4 g-md-5">
 
                     <!-- Left Content -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 text-center text-lg-start">
 
                         <span class="badge bg-primary px-3 py-2 mb-3 fs-6">
                             Admissions Open
@@ -226,31 +228,31 @@
                     </div>
 
                     <!-- Right Image -->
-                    <div class="col-lg-5 text-center">
-
+                    <div class="col-lg-5 text-center mt-4 mt-lg-0">
                         <img src="images/Admission-image_3.webp" class="img-fluid rounded-4 shadow"
                             alt="Admission During the Year">
-
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <section class="py-5 admission-section-four">
+        <!-- Special Program Section -->
+        <section class="py-4 py-md-5 admission-section-four bg-light">
 
             <div class="container">
-                <div class="row align-items-center g-5">
+                <div class="row align-items-center g-4 g-md-5 flex-column-reverse flex-lg-row">
 
                     <!-- Left Image -->
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
                         <img src="images/Admission_image_4.webp"
                             class="img-fluid rounded-circle border border-primary border-5 shadow"
-                            alt="Pre-term Admission" style="width:300px; height:300px; object-fit:cover;">
+                            alt="Pre-term Admission"
+                            style="width: 300px; max-width: 100%; aspect-ratio: 1; object-fit: cover;">
                     </div>
 
                     <!-- Right Content -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 text-center text-lg-start">
 
                         <span class="badge bg-primary px-3 py-2 mb-3 fs-6">
                             Special Program
@@ -281,15 +283,16 @@
                 </div>
             </div>
         </section>
+
         <!-- Admission Form Section -->
         <section class="py-5 admission-section-five">
 
             <div class="container">
 
                 <!-- Heading -->
-                <div class="text-center mb-5">
+                <div class="text-center mb-4 mb-md-5">
                     <h1 class="fw-bold display-5">ADMISSIONS OPEN!</h1>
-                    <p class="text-secondary fs-5">
+                    <p class="text-secondary fs-5 mb-2">
                         The Future Belongs to the Curious. Are You Prepared?
                     </p>
                     <p class="text-secondary">
@@ -298,72 +301,79 @@
                 </div>
 
                 <!-- Form -->
-                <form>
-                    <div class="row g-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <form class="card shadow p-4 p-md-5 border-0 rounded-4">
+                            <div class="row g-4">
 
-                        <!-- Academic Year -->
-                        <div class="col-md-6">
-                            <select class="form-select form-select-lg">
-                                <option selected>Select Academic Year</option>
-                                <option>2026-2027</option>
-                                <option>2027-2028</option>
-                            </select>
-                        </div>
+                                <!-- Academic Year -->
+                                <div class="col-md-6">
+                                    <select class="form-select form-select-lg">
+                                        <option selected>Select Academic Year</option>
+                                        <option>2026-2027</option>
+                                        <option>2027-2028</option>
+                                    </select>
+                                </div>
 
-                        <!-- Student Name -->
-                        <div class="col-md-6">
-                            <input type="text" class="form-control form-control-lg" placeholder="Student's Name">
-                        </div>
+                                <!-- Student Name -->
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg"
+                                        placeholder="Student's Name">
+                                </div>
 
-                        <!-- Age -->
-                        <div class="col-md-6">
-                            <input type="number" class="form-control form-control-lg" placeholder="Age">
-                        </div>
+                                <!-- Age -->
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control form-control-lg" placeholder="Age">
+                                </div>
 
-                        <!-- Parent Phone -->
-                        <div class="col-md-6">
-                            <input type="tel" class="form-control form-control-lg" placeholder="Parent's Phone Number">
-                        </div>
+                                <!-- Parent Phone -->
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control form-control-lg"
+                                        placeholder="Parent's Phone Number">
+                                </div>
 
-                        <!-- Email -->
-                        <div class="col-md-6">
-                            <input type="email" class="form-control form-control-lg" placeholder="Email Address">
-                        </div>
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg"
+                                        placeholder="Email Address">
+                                </div>
 
-                        <!-- Class -->
-                        <div class="col-md-6">
-                            <select class="form-select form-select-lg">
-                                <option selected>Select Class/Grade</option>
-                                <option>Nursery</option>
-                                <option>Junior KG</option>
-                                <option>Senior KG</option>
-                                <option>Grade 1</option>
-                                <option>Grade 2</option>
-                                <option>Grade 3</option>
-                                <option>Grade 4</option>
-                                <option>Grade 5</option>
-                                <option>Grade 6</option>
-                                <option>Grade 7</option>
-                                <option>Grade 8</option>
-                                <option>Grade 9</option>
-                                <option>Grade 10</option>
-                            </select>
-                        </div>
+                                <!-- Class -->
+                                <div class="col-md-6">
+                                    <select class="form-select form-select-lg">
+                                        <option selected>Select Class/Grade</option>
+                                        <option>Nursery</option>
+                                        <option>Junior KG</option>
+                                        <option>Senior KG</option>
+                                        <option>Grade 1</option>
+                                        <option>Grade 2</option>
+                                        <option>Grade 3</option>
+                                        <option>Grade 4</option>
+                                        <option>Grade 5</option>
+                                        <option>Grade 6</option>
+                                        <option>Grade 7</option>
+                                        <option>Grade 8</option>
+                                        <option>Grade 9</option>
+                                        <option>Grade 10</option>
+                                    </select>
+                                </div>
 
-                        <!-- Message -->
-                        <div class="col-12">
-                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                        </div>
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
 
-                        <!-- Button -->
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primary btn-lg px-5">
-                                Enquire Now
-                            </button>
-                        </div>
+                                <!-- Button -->
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 w-100 w-md-auto">
+                                        Enquire Now
+                                    </button>
+                                </div>
 
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
 
             </div>
         </section>
@@ -371,17 +381,15 @@
     </main>
 
     <!-- Footer Section Start -->
-    <footer class="bg-dark text-white pt-5 pb-3">
+    <footer class="bg-dark text-white pt-5 pb-3 p-3">
         <div class="container">
-            <div class="row">
-
+            <div class="row text-center text-md-start">
 
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white mb-3 fw-bold f_family">Shrihari Vidhyalaya</h5>
                     <p class="text-white-50 small f_family" style="line-height: 1.8;">
                         Shrihari Vidhyalaya Wahegaon School is a premium international school offering excellence in
-                        child and
-                        student development, backed by international curricula and a robust infrastructure.
+                        child and student development, backed by international curricula and a robust infrastructure.
                     </p>
                     <div class="mt-3">
                         <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
@@ -430,7 +438,7 @@
                     <h5 class="text-white mb-3 fw-bold f_family">Contact Us</h5>
                     <p class="text-white-50 small mb-2">📍 Wahegaon, Beed, Maharashtra</p>
                     <p class="text-white-50 small mb-2">📞 +91 98765 43210</p>
-                    <p class="text-white-50 small">✉️ shriharividhyalaya@.com</p>
+                    <p class="text-white-50 small">✉️ shriharividhyalaya@gmail.com</p>
                 </div>
 
             </div>
@@ -442,14 +450,11 @@
                     <p class="mb-0 text-white-50 small">&copy; 2026 Shrihari Vidhyalaya Wahegaon School. All Rights
                         Reserved.</p>
                 </div>
-
             </div>
 
         </div>
     </footer>
     <!-- Footer Section End -->
-
-
 
 </body>
 

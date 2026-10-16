@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" href="css/style.css" />
 
-
 </head>
 
 <body>
@@ -19,20 +18,19 @@
   <!-- Header -->
   <header>
 
-
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
 
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="images/School Logo.png" alt="School Logo" width="60" height="60">
-          Shrihari Vidhyalaya Wahegaon School
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="images/School Logo.png" alt="School Logo" width="50" height="50" class="img-fluid">
+          <span class="fs-6 fw-bold sname_color">Shrihari Vidhyalaya Wahegaon School</span>
         </a>
 
-        <!-- Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Toggle Button (White button fix applied) -->
+        <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
         </button>
 
         <!-- Menu -->
@@ -53,7 +51,7 @@
             <li class="nav-item">
               <a class="nav-link" href="facilities.html">Facilities</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link" href="contact.html">contact</a>
             </li>
@@ -73,7 +71,8 @@
   <main>
 
     <!-- Slider Section Start -->
-    <section>
+    <!-- Added mt-5 pt-5 so it doesn't hide under the fixed navbar -->
+    <section class="mt-5 pt-2 pt-md-4">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators ">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -87,10 +86,8 @@
           <div class="carousel-item active">
             <img src="images/clg1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-
               <h1 class="Ad_open f_family">Admissions Open</h1>
               <h2 class="Ad_open f_family">2026–27</h2>
-
             </div>
           </div>
           <div class="carousel-item">
@@ -123,27 +120,26 @@
     <!-- Slider Section End -->
 
     <!-- infastructure Section start -->
-    <section class="second_sec  p-5 mb-3">
-
-
+    <section class="second_sec p-4 p-md-5 mb-3 text-center text-md-start">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/infa.png" alt="infastructure School" class="img-fluid" />
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="images/infa.png" alt="infastructure School" class="img-fluid rounded shadow-sm" />
           </div>
           <div class="col-md-6">
             <h1 class="infastructure_tcolor mb-4">INFRASTRUCTURE</h1>
-            <p class="P_tcolor f_family">As an international school in Balewadi, Pune, the infrastructure and facilities
+            <p class="P_tcolor f_family text-start">As an international school in Balewadi, Pune, the infrastructure and
+              facilities
               support the holistic education that the School imbibes. Students can leverage state-of-the-art
               infrastructure and facilities like STEM labs and sports installations to pursue artistic and co-curricular
               disciplines.</p>
-            <ul>
-              <li class="mt-4 mb-4 f_family">Smart Classrooms: Equipped with modern digital boards for interactive
+            <ul class="text-start">
+              <li class="mt-4 mb-3 f_family">Smart Classrooms: Equipped with modern digital boards for interactive
                 learning.</li>
-              <li class="mb-4 f_family">
+              <li class="mb-3 f_family">
                 Advanced Labs: Fully functional Physics, Chemistry, Biology, and STEM/Robotics labs.
               </li>
-              <li class="mb-4 f_family">
+              <li class="mb-3 f_family">
                 Sports Facilities: Spacious playgrounds, basketball courts, and indoor sports areas.
               </li>
               <li class="mb-4 f_family">
@@ -154,45 +150,41 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- infastructure Section End -->
 
     <!-- Tree Section Start -->
-    <section class="tree_sec p-5 mt-2 mb-2">
-
-
-
-
+    <section class="tree_sec p-4 p-md-5 mt-2 mb-2 text-center text-md-start">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="infastructure_tcolor mt-3 ">Welcome To</h2>
-            <p class="school f_family ">Shrihari Vidhyalaya Wahegaon School - An
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="infastructure_tcolor mt-3">Welcome To</h2>
+            <p class="school f_family fs-5">Shrihari Vidhyalaya Wahegaon School - An
               International School Beed City.</p>
-            <p class="school_tree f_family">Shrihari Vidhyalaya School is a premium international school offering
+            <p class="school_tree f_family text-start">Shrihari Vidhyalaya School is a premium international school
+              offering
               International
               Curricula. It is located in Wahegaon, Beed, and is backed by the Vishwakarma Purple Educational Trust and
               the prestige of Shrihari Vidhyalaya World School.</p>
             <a class="btn btn-white" href="about.html" role="button">ReadMore...</a>
           </div>
-          <div class="col-md-6">
-            <img src="images/treeschool.webp" class="rounded mx-auto d-block" alt="..." height="450" width="60%"
-              class="img-fluid" />
+          <!-- Removed fixed height/width to make image responsive -->
+          <div class="col-md-6 text-center">
+            <img src="images/treeschool.webp" class="img-fluid rounded mx-auto d-block shadow-sm" alt="..."
+              style="max-width: 80%;" />
           </div>
         </div>
       </div>
-
     </section>
     <!-- Tree Section End here -->
 
-
     <!-- Heart of School Leader Section Start -->
-    <section class="navbar p-3 mt-2 bg-dark text-light">
+    <!-- Changed 'navbar' class to 'py-5' as 'navbar' causes layout issues on mobile -->
+    <section class="py-5 mt-2 bg-dark text-light">
       <div class="container">
-        <div class="row">
-          <h1 class="text-center mt-5 mb-3 f_family text-white">From the Heart of Our School Leaders</h1>
-          <h6 class="text-center mb-5 f_family text-white-50">
+        <div class="row justify-content-center">
+          <h1 class="text-center mt-3 mb-3 f_family text-white">From the Heart of Our School Leaders</h1>
+          <h6 class="text-center mb-5 f_family text-white-50 px-3 px-md-5">
             Discover the philosophy of Universal Wisdom School, an international school in Balewadi, Pune, first-hand
             from the Heads who are equipped with the armour of a diverse career, over four decades of joint
             international experience, and a calvary of staff that’s as dedicated as they are.
@@ -221,10 +213,9 @@
             </div>
           </div>
 
-          <!-- Leader 3: Nayi Image (Placeholder) -->
+          <!-- Leader 3: Priti Karakjate -->
           <div class="col-md-4 text-center mb-4">
             <div class="leader-img-container mx-auto">
-              <!-- Is URL ki jagah aap apni nayi photo ka naam baad mein daal sakte hain -->
               <img class="img-fluid rounded shadow"
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
                 alt="School Director">
@@ -239,89 +230,99 @@
       </div>
     </section>
     <!-- Heart of School Leader Section End -->
-    <!-- Heart of School Leader Section End -->
 
-    <!-- Parents Speck Section Start -->
-    <section class=" parents_section p-5">
+    <!-- Parents Speak Section Start -->
+    <section class="parents_section p-4 p-md-5 bg-light">
       <div class="container">
-        <div class="row">
-          <h1 class="text-center mb-5 f_family">PARENTS SPEAK</h1>
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
+        <h1 class="text-center mb-5 f_family">PARENTS SPEAK</h1>
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-3">
+            <!-- Added mx-auto and max-width instead of fixed 18rem -->
+            <div class="card mx-auto mb-4 shadow-sm h-100" style="max-width: 18rem;">
               <img src="images/p_4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mrs.Payal and Mr.Rajesh
-                  Parents of Shiv.</h5>
-                <p class="card-text f_family">We enrolled our kids at UWS with their promise of excellence in child and
-                  student
-                  development. We are experiencing it with their approach to education that stretches beyond just the
-                  curriculum and focuses on kids’ character building, social-emotional development.
-                </p>
-                <a href="#" class="btn btn-primary">ReadMore</a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mrs. Payal and Mr. Rajesh<br><small class="text-muted">Parents of Shiv</small>
+                </h5>
+                <p class="card-text f_family flex-grow-1">We enrolled our kids at UWS with their promise of excellence
+                  in child and
+                  student development. We are experiencing it with their approach to education that stretches beyond
+                  just the
+                  curriculum.</p>
+                <a href="#" class="btn btn-primary mt-auto">ReadMore</a>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card mx-auto mb-4 shadow-sm h-100" style="max-width: 18rem;">
               <img src="images/parents_i3.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mrs.Swati and Mr.Satish Parents Of Nikhil</h5>
-                <p class="card-text f_family">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mrs. Swati and Mr. Satish<br><small class="text-muted">Parents Of Nikhil</small>
+                </h5>
+                <p class="card-text f_family flex-grow-1">
                   As a parent to an 11-year-old attending this school, I couldn't be more impressed with the holistic
                   approach the school takes towards education. The school genuinely understands that education extends
-                  beyond textbooks, emphasizing a well-rounded approach that nurtures,</p>
-                <a href="#" class="btn btn-primary">ReadMore</a>
+                  beyond textbooks.</p>
+                <a href="#" class="btn btn-primary mt-auto">ReadMore</a>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card mx-auto mb-4 shadow-sm h-100" style="max-width: 18rem;">
               <img src="images/parents_i2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mrs.Sakshi and Mr.Yogesh Parents of Shiva</h5>
-                <p class="card-text f_family">We selected Universal Wisdom School primarily because it is a part of the
-                  legacy of
-                  Wisdom World Schools. We got our child's admission done at a time when the school building was not
-                  even constructed, as we were impressed by the commitment and dedication shown by the Principal</p>
-                <a href="#" class="btn btn-primary">ReadMore</a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mrs. Sakshi and Mr. Yogesh<br><small class="text-muted">Parents of Shiva</small>
+                </h5>
+                <p class="card-text f_family flex-grow-1">We selected Universal Wisdom School primarily because it is a
+                  part of the
+                  legacy of Wisdom World Schools. We got our child's admission done at a time when the school building
+                  was not
+                  even constructed.</p>
+                <a href="#" class="btn btn-primary mt-auto">ReadMore</a>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card mx-auto mb-4 shadow-sm h-100" style="max-width: 18rem;">
               <img src="images/parants_i1.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mrs.Aarti and Mr.Anand Parents Of Ganesh</h5>
-                <p class="card-text f_family">We have researched multiple schools within the vicinity for overall child
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mrs. Aarti and Mr. Anand<br><small class="text-muted">Parents Of Ganesh</small>
+                </h5>
+                <p class="card-text f_family flex-grow-1">We have researched multiple schools within the vicinity for
+                  overall child
                   development, quality infrastructure, quality teachers, and definitely the culture that is practised
-                  every day in the school, we have found Universal Wisdom School as the best school. We are definitely.
-                </p>
-                <a href="#" class="btn btn-primary">ReadMore</a>
+                  every day in the school.</p>
+                <a href="#" class="btn btn-primary mt-auto">ReadMore</a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
-    <!-- Parents Speck Section Start-->
+    <!-- Parents Speak Section End-->
 
     <!-- Inquiry Form Section Start -->
-    <section class="inquiry-sec p-5 bg-light">
+    <section class="inquiry-sec p-4 p-md-5">
 
       <div class="container">
         <div class="row align-items-center">
 
           <!-- Left Side: Contact Information -->
-          <div class="col-md-5 mb-4 mb-md-0">
+          <div class="col-md-5 mb-5 mb-md-0">
             <h2 class="infastructure_tcolor mb-3 f_family fw-bold">Admission Inquiry</h2>
             <p class="P_tcolor f_family mb-4">
               Please fill out the form below for any questions regarding admission to Shrihari Vidyalaya, Vahegaon. Our
               team will contact you soon.
-
             </p>
 
             <div class="d-flex align-items-center mb-3">
-              <div class="bg-primary text-white p-2 rounded-circle me-3 text-center" style="width: 40px; height: 40px;">
+              <div
+                class="bg-primary text-white p-2 rounded-circle me-3 text-center d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px;">
                 📍</div>
               <div>
                 <h6 class="mb-0 fw-bold">Address</h6>
@@ -330,7 +331,9 @@
             </div>
 
             <div class="d-flex align-items-center mb-3">
-              <div class="bg-primary text-white p-2 rounded-circle me-3 text-center" style="width: 40px; height: 40px;">
+              <div
+                class="bg-primary text-white p-2 rounded-circle me-3 text-center d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px;">
                 📞</div>
               <div>
                 <h6 class="mb-0 fw-bold">Call Us</h6>
@@ -339,11 +342,13 @@
             </div>
 
             <div class="d-flex align-items-center">
-              <div class="bg-primary text-white p-2 rounded-circle me-3 text-center" style="width: 40px; height: 40px;">
+              <div
+                class="bg-primary text-white p-2 rounded-circle me-3 text-center d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px;">
                 ✉️</div>
               <div>
                 <h6 class="mb-0 fw-bold">Email</h6>
-                <p class="mb-0 text-muted small">shriharividhyalaya@.com</p>
+                <p class="mb-0 text-muted small">shriharividhyalaya@gmail.com</p>
               </div>
             </div>
           </div>
@@ -410,10 +415,9 @@
   </main>
 
   <!-- Footer Section Start -->
-  <footer class="bg-dark text-white pt-5 pb-3">
+  <footer class="bg-dark text-white pt-5 pb-3 p-3">
     <div class="container">
-      <div class="row">
-
+      <div class="row text-center text-md-start">
 
         <div class="col-md-4 mb-4">
           <h5 class="text-white mb-3 fw-bold f_family">Shrihari Vidhyalaya</h5>
@@ -431,7 +435,6 @@
           </div>
         </div>
 
-
         <div class="col-md-2 mb-4 col-6">
           <h5 class="text-white mb-3 fw-bold f_family">Quick Links</h5>
           <ul class="list-unstyled footer-links">
@@ -441,11 +444,9 @@
             </li>
             <li class="mb-2"><a href="facilities.html" class="text-white-50 text-decoration-none small">Facilities</a>
             </li>
-           
             <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none small">Contact Us</a></li>
           </ul>
         </div>
-
 
         <div class="col-md-3 mb-4 col-6">
           <h5 class="text-white mb-3 fw-bold f_family">School Hours</h5>
@@ -457,12 +458,11 @@
           </ul>
         </div>
 
-
         <div class="col-md-3 mb-4">
           <h5 class="text-white mb-3 fw-bold f_family">Contact Us</h5>
           <p class="text-white-50 small mb-2">📍 Wahegaon, Beed, Maharashtra</p>
           <p class="text-white-50 small mb-2">📞 +91 98765 43210</p>
-          <p class="text-white-50 small">✉️ shriharividhyalaya@.com</p>
+          <p class="text-white-50 small">✉️ shriharividhyalaya@gmail.com</p>
         </div>
 
       </div>
@@ -473,7 +473,6 @@
         <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
           <p class="mb-0 text-white-50 small">&copy; 2026 Shrihari Vidhyalaya Wahegaon School. All Rights Reserved.</p>
         </div>
-
       </div>
 
     </div>
@@ -483,3 +482,6 @@
 </body>
 
 </html>
+<br><br>
+<FollowUp label="Kaisa laga ye fix? Kya CSS ya koi aur page bacha hai?"
+  query="Everything looks good, are there any CSS tweaks needed?" />

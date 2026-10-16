@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-
 </head>
 
 <body>
@@ -22,16 +21,17 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
 
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="images/School Logo.png" alt="School Logo" width="60" height="60">
-                    Shrihari Vidhyalaya Wahegaon School
+                <!-- Logo (Responsive alignment applied) -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="images/School Logo.png" alt="School Logo" width="50" height="50" class="img-fluid">
+                    <span class="fs-6 fw-bold sname_color">Shrihari Vidhyalaya Wahegaon School</span>
                 </a>
 
-                <!-- Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Toggle Button (White button fix applied) -->
+                <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
                 </button>
 
                 <!-- Menu -->
@@ -70,9 +70,10 @@
 
     <main>
         <!-- Facilities Hero Banner -->
-        <section class="facilities-hero text-white text-center p-5"
+        <!-- Adjusted padding for mobile (p-4 p-md-5) -->
+        <section class="facilities-hero text-white text-center p-4 p-md-5 mt-5"
             style="background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('images/infa.png') no-repeat center center; background-size: cover; border-bottom: 4px solid #0d6efd;">
-            <div class="container py-5">
+            <div class="container py-4 py-md-5 mt-4">
                 <h1 class="display-4 fw-bold f_family text-white">Our Campus Facilities</h1>
                 <p class="lead text-white-50 f_family mx-auto" style="max-width: 600px;">
                     Providing a world-class infrastructure to support the academic, creative, and physical growth of our
@@ -82,36 +83,38 @@
         </section>
 
         <!-- Detailed Facilities Grid -->
-        <section class="py-5 bg-light">
+        <section class="py-4 py-md-5 bg-light">
             <div class="container">
                 <div class="row g-4">
 
                     <!-- Facility 1: Smart Classrooms -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden facility-card">
                             <div class="p-4 bg-white text-center">
                                 <div class="fs-1 mb-3">🖥️</div>
                                 <h5 class="fw-bold f_family text-dark">Smart Classrooms</h5>
-                                <p class="text-muted small f_family">Equipped with modern digital boards for interactive
+                                <p class="text-muted small f_family mb-0">Equipped with modern digital boards for
+                                    interactive
                                     and highly engaging visual learning.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Facility 2: Advanced Labs -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden facility-card">
                             <div class="p-4 bg-white text-center">
                                 <div class="fs-1 mb-3">🔬</div>
                                 <h5 class="fw-bold f_family text-dark">Advanced Labs</h5>
-                                <p class="text-muted small f_family">Fully functional Physics, Chemistry, Biology, and
+                                <p class="text-muted small f_family mb-0">Fully functional Physics, Chemistry, Biology,
+                                    and
                                     advanced STEM/Robotics learning spaces.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Facility 3: Sports Arena -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden facility-card bg-white">
                             <div class="p-4 bg-white text-center h-100 d-flex flex-column justify-content-center">
                                 <div class="fs-1 mb-3">🏀</div>
@@ -123,12 +126,13 @@
                     </div>
 
                     <!-- Facility 4: Library Center -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden facility-card">
                             <div class="p-4 bg-white text-center">
                                 <div class="fs-1 mb-3">📚</div>
                                 <h5 class="fw-bold f_family text-dark">Library Center</h5>
-                                <p class="text-muted small f_family">A vast rich collection of physical books, academic
+                                <p class="text-muted small f_family mb-0">A vast rich collection of physical books,
+                                    academic
                                     journals, and modern digital reading resources.</p>
                             </div>
                         </div>
@@ -138,18 +142,18 @@
             </div>
         </section>
     </main>
-    <!-- Footer Section Start -->
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row">
 
+    <!-- Footer Section Start -->
+    <footer class="bg-dark text-white pt-5 pb-3 p-3">
+        <div class="container">
+            <!-- Center align text on mobile, left align on md+ screens -->
+            <div class="row text-center text-md-start">
 
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white mb-3 fw-bold f_family">Shrihari Vidhyalaya</h5>
                     <p class="text-white-50 small f_family" style="line-height: 1.8;">
                         Shrihari Vidhyalaya Wahegaon School is a premium international school offering excellence in
-                        child and
-                        student development, backed by international curricula and a robust infrastructure.
+                        child and student development, backed by international curricula and a robust infrastructure.
                     </p>
                     <div class="mt-3">
                         <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"
@@ -161,7 +165,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-2 mb-4 col-6">
                     <h5 class="text-white mb-3 fw-bold f_family">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
@@ -170,17 +173,13 @@
                         <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none small">About
                                 Us</a></li>
                         <li class="mb-2"><a href="admission.html"
-                                class="text-white-50 text-decoration-none small">Admission</a>
-                        </li>
+                                class="text-white-50 text-decoration-none small">Admission</a></li>
                         <li class="mb-2"><a href="facilities.html"
-                                class="text-white-50 text-decoration-none small">Facilities</a>
-                        </li>
-
+                                class="text-white-50 text-decoration-none small">Facilities</a></li>
                         <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none small">Contact
                                 Us</a></li>
                     </ul>
                 </div>
-
 
                 <div class="col-md-3 mb-4 col-6">
                     <h5 class="text-white mb-3 fw-bold f_family">School Hours</h5>
@@ -188,17 +187,15 @@
                         <li class="mb-2"><strong class="text-white">Mon - Fri:</strong> 8:30 AM - 3:30 PM</li>
                         <li class="mb-2"><strong class="text-white">Saturday:</strong> 8:30 AM - 12:30 PM</li>
                         <li class="mb-2"><strong class="text-white">Sunday:</strong> <span
-                                class="text-danger fw-bold">Closed</span>
-                        </li>
+                                class="text-danger fw-bold">Closed</span></li>
                     </ul>
                 </div>
-
 
                 <div class="col-md-3 mb-4">
                     <h5 class="text-white mb-3 fw-bold f_family">Contact Us</h5>
                     <p class="text-white-50 small mb-2">📍 Wahegaon, Beed, Maharashtra</p>
                     <p class="text-white-50 small mb-2">📞 +91 98765 43210</p>
-                    <p class="text-white-50 small">✉️ shriharividhyalaya@.com</p>
+                    <p class="text-white-50 small">✉️ shriharividhyalaya@gmail.com</p>
                 </div>
 
             </div>
@@ -210,14 +207,11 @@
                     <p class="mb-0 text-white-50 small">&copy; 2026 Shrihari Vidhyalaya Wahegaon School. All Rights
                         Reserved.</p>
                 </div>
-
             </div>
 
         </div>
     </footer>
     <!-- Footer Section End -->
-
-
 
 </body>
 
